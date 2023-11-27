@@ -1,14 +1,19 @@
 import './style.css'
 
-const InputAtom = ({value, onChange, placeholder}) => {
+const InputAtom = (props) => {
     return(
         <input 
           type="text" 
-          value={value}
-          onChange={onChange}
-          placeholder={placeholder} 
           className='input-number'
-        /> 
+          placeholder={props.placeholder} 
+          value={props.value}
+          onChange={props.onChange}
+          onFocus={props.onFocus}
+          onBlur={(e) => {
+            e.target.style.borderRadius = '0'
+            e.target.style.borderColor = 'orange'
+          }}
+        />
     )
 }
 

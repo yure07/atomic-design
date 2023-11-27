@@ -1,0 +1,16 @@
+.span-input{
+    background-color: #fff;
+    border: 0;
+    border-radius: 0px 30px 30px 30px;
+    position: absolute;
+    padding: 5px 8px;
+    margin-top: 2.5%;
+    margin-left: -11%;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.span-input > svg{
+    color: orange;
+    vertical-align: middle;
+}
